@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Choice</string>
+
+    <string name="boring_1">结果出现的时候</string>
+    <string name="boring_2">你将知道</string>
+    <string name="boring_3">自己内心的答案</string>
+
+    <string name="two_1">已知选项</string>
+    <string name="two_2">未知选项</string>
+    <string name="two_3">我的纪录</string>
+
+    <string name="known_1">你面临什么选择？</string>
+    <string name="known_2">如：下午吃什么？</string>
+    <string name="known_3">你有几个可选选项？</string>
+    <string name="known_4">请输入选项的个数</string>
+
+    <string name="detail_1">请输入选项:</string>
+    <string name="detail_list_1">选项</string>
+    <string name="detail_list_n">如：吃食堂</string>
+
+    <string name="menu_1">首页</string>
+    <string name="menu_2">新的选择</string>
+    <string name="menu_3">历史记录</string>
+    <string name="menu_4">退出</string>
+
+    <string name="input">0123456789</string>
+
+    <string name="fragment1">11</string>
+    <string name="fragment2">12</string>
+    <string name="fragment3">13</string>
+
+    <string name="btn_pages">开始使用</string>
+
+
+</resources>

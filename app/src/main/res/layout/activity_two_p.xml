@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TwoPActivity">
+
+    <Button
+        android:id="@+id/known"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:onClick="onClick"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="@string/two_1" />
+
+    <Button
+        android:id="@+id/unknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:onClick="onClick"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="@string/two_2" />
+
+    <Button
+        android:id="@+id/jilu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="right"
+        android:text="@string/two_3" />
+
+
+</LinearLayout>

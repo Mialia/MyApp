@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/itemn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="@string/detail_list_1" />
+
+    <EditText
+        android:id="@+id/itemde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:hint="@string/detail_list_n" />
+
+
+</LinearLayout>
