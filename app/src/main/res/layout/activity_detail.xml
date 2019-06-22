@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/q1"
     android:orientation="vertical"
     tools:context=".DetailActivity">
 
@@ -31,8 +32,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="onClick"
-        android:padding="20dp"
+        android:textColor="@color/secondary_text"
+        android:paddingTop="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="20dp"
         android:textSize="23sp"
-        android:layout_margin="10sp"
+        android:background="@color/divider"
         android:text="Next" />
 </LinearLayout>

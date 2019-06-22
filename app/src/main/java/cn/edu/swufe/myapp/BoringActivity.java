@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.VideoView;
 
-public class BoringActivity extends Activity {
+public class BoringActivity extends AppCompatActivity {
     private  Button enter;
     private VideoView myVideoView;
 
@@ -36,7 +36,7 @@ public class BoringActivity extends Activity {
 
 
         myVideoView = (VideoView) findViewById(R.id.videoView);
-        final String videoPath = Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.bgg).toString();
+        final String videoPath = Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.bg1).toString();
         myVideoView.setVideoPath(videoPath);
         myVideoView.start();
         myVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
@@ -68,12 +68,12 @@ public class BoringActivity extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==R.id.menu_index){
-            Intent list= new Intent(this,TwoPActivity.class);
+            Intent list= new Intent(this,BoringActivity.class);
             startActivity(list);
         }
         else if(item.getItemId()==R.id.menu_choice){
             //打开列表窗口
-            Intent list= new Intent(this,RecordActivity.class);
+            Intent list= new Intent(this,TwoPActivity.class);
             startActivity(list);
         }
         else if(item.getItemId()==R.id.menu_record){

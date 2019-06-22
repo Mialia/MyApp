@@ -1,10 +1,18 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/divider</item>
+        <item name="colorPrimaryDark">@color/divider</item>
+        <item name="colorAccent">@color/divider</item>
+        <item name="actionBarSize">55dp</item>
+        <item name="android:titleTextStyle">@style/titleStyle</item>
+
+
+    </style>
+
+    <style name="titleStyle" >
+        <item name="android:textColor">@color/secondary_text</item>
     </style>
 </resources>

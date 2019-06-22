@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -48,5 +49,27 @@ public class PageActivity extends AppCompatActivity {
         Log.i(TAG, "onClick: PageActivity");
         startActivity(intent);
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==R.id.menu_index){
+            Intent list= new Intent(this,BoringActivity.class);
+            startActivity(list);
+        }
+        else if(item.getItemId()==R.id.menu_choice){
+            //打开列表窗口
+            Intent list= new Intent(this,TwoPActivity.class);
+            startActivity(list);
+        }
+        else if(item.getItemId()==R.id.menu_record){
+            //打开列表窗口
+            Intent list= new Intent(this,RecordActivity.class);
+            startActivity(list);
+        }
+        else{
+            System.exit(0);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

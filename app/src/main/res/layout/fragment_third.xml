@@ -3,30 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:background="@color/primary_light"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
     tools:context=".ThirdFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment31"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="24sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
         android:textSize="16sp"
-        android:text="@string/fragment3" />
+        android:text="@string/fragment32" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:paddingTop="150dp"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/life" />
-
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/record" />
     <Button
         android:id="@+id/btn_page"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/divider"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="400dp"
         android:onClick="onClick"
+        android:padding="30dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="22sp"
         android:text="@string/btn_pages" />
 
 

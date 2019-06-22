@@ -4,22 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_light"
     android:padding="20dp"
     tools:context=".FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment11"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="24sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
         android:textSize="16sp"
-        android:text="@string/fragment1" />
+        android:text="@string/fragment12" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:paddingTop="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/known" />
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:src="@drawable/wes" />
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_slide"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
 
 
 </FrameLayout>

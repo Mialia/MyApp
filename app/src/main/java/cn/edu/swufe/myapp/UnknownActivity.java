@@ -121,19 +121,14 @@ public class UnknownActivity extends AppCompatActivity {
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menus,menu);
-        return true;
-    }
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==R.id.menu_index){
-            Intent list= new Intent(this,TwoPActivity.class);
+            Intent list= new Intent(this,BoringActivity.class);
             startActivity(list);
         }
         else if(item.getItemId()==R.id.menu_choice){
             //打开列表窗口
-            Intent list= new Intent(this,RecordActivity.class);
+            Intent list= new Intent(this,TwoPActivity.class);
             startActivity(list);
         }
         else if(item.getItemId()==R.id.menu_record){
@@ -146,5 +141,4 @@ public class UnknownActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

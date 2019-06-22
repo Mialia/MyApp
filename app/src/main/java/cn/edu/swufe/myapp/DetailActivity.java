@@ -52,13 +52,14 @@ public class DetailActivity extends AppCompatActivity {
         intent.setClass(DetailActivity.this,RandomActivity.class);//前面是本页面，后面是下一页面
         intent.putExtra("ed_what",ed_what);
         intent.putExtra("ed_num",ed_num);
-        Log.i(TAG, "onClick: ed_what=" + ed_what);
-        Log.i(TAG, "onClick: ed_num=" + ed_num);
+        Log.i(TAG, "onClick: 存入ed_what=" + ed_what);
+        Log.i(TAG, "onClick: 存入ed_num=" + ed_num);
         for(int i=0;i<ed_num;i++){
-            intent.putExtra("item"+i+1,strs[i]);
+            if(strs.length>0){
+            intent.putExtra("item"+(i+1),strs[i]);
             Log.i(TAG, "onClick:选项 "+(i+1)+ "内容"+strs[i]);
 
-        }
+        }}
         startActivityForResult(intent,1);
 
     }
@@ -78,12 +79,12 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==R.id.menu_index){
-            Intent list= new Intent(this,TwoPActivity.class);
+            Intent list= new Intent(this,BoringActivity.class);
             startActivity(list);
         }
         else if(item.getItemId()==R.id.menu_choice){
             //打开列表窗口
-            Intent list= new Intent(this,RecordActivity.class);
+            Intent list= new Intent(this,TwoPActivity.class);
             startActivity(list);
         }
         else if(item.getItemId()==R.id.menu_record){

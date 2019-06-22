@@ -4,13 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_light"
     android:layout_centerInParent="true"
     tools:context=".BoringActivity">
 
     <!-- 引入背景布局 -->
     <include
         layout="@layout/bg_mp4"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentLeft="true" />
 
 
     <TextView
@@ -18,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="40dp"
         android:text="@string/boring_1"
         android:textSize="23sp" />
 
@@ -28,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="234dp"
+        android:layout_marginTop="100dp"
         android:text="@string/boring_2"
         android:textSize="20sp" />
 
@@ -37,9 +45,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="207dp"
+        android:layout_marginTop="150dp"
         android:text="@string/boring_3"
         android:textSize="23sp" />
 
@@ -49,9 +57,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="83dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/divider"
         android:onClick="onClick"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
         android:text="Enter"
+        android:textColor="@color/primary_dark"
         android:textSize="25sp"
         tools:ignore="RtlCompat" />
 
