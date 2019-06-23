@@ -38,9 +38,6 @@ public class PageActivity extends AppCompatActivity {
             //}
        // });
 
-
-
-
     }
 
     public void onClick(View view) {

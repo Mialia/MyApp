@@ -30,6 +30,7 @@ public class RandomActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_random);
         //helper=new Helper();
         //final_choice="";
         //接收数据
@@ -43,7 +44,7 @@ public class RandomActivity extends AppCompatActivity {
             choice[i] = intent.getStringExtra("item"+(i+1));
             Log.i(TAG, "接收:  选项:"+(i+1)+ "  内容: "+choice[i]);
         }
-        setContentView(R.layout.activity_random);
+
         d_what=(TextView)findViewById(R.id.d_what);
         d_what.setText(ed_what);
 

@@ -37,7 +37,7 @@ public class RecordActivity extends ListActivity implements AdapterView.OnItemLo
 
         HashMap<String, String> m = new HashMap<String, String>();
         m.put("QUESTION", "  ");
-        m.put("RESULT", "长按删除");
+        m.put("RESULT", "（长按删除）");
         m.put("TIME", "  ");
         mychoicelist.add(m);
 
@@ -75,11 +75,7 @@ public class RecordActivity extends ListActivity implements AdapterView.OnItemLo
 
     public void onClick(View v) {
         //Toast.makeText(DetailActivity.this, adapter.getParams()+"", Toast.LENGTH_SHORT).show();
-
         //String strs[]= adapter.getParams().toArray(new String[0]);
-
-
-
     }
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
@@ -97,8 +93,6 @@ public class RecordActivity extends ListActivity implements AdapterView.OnItemLo
                 for(Choices choices : dbManager.listAll()){
                     ids[index]=choices.getId();
                     index++;
-
-
                 }
                 Log.i(TAG, "onClick: 对话框事件处理  position:"+position);
                 Log.i(TAG,"ID："+ ids[position-2]);

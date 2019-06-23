@@ -31,7 +31,7 @@
     <string name="fragment12">根据已知任务和选项，帮你做出选择</string>
 
 
-    <string name="fragment21">未知任务</string>
+    <string name="fragment21">未知选项</string>
     <string name="fragment22">根据未知任务，随机帮你做出选择</string>
 
     <string name="fragment31">历史记录</string>
